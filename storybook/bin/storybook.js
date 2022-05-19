@@ -3,8 +3,8 @@
 /**
  * Internal dependencies
  */
-const { shell } = require( '../utils' );
-const argv = require('process').argv;
+import { shell } from '../utils/index.js';
+import { argv } from 'node:process';
 
 switch (argv[argv.length - 1]) {
 	case 'build':

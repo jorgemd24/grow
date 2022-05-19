@@ -1,8 +1,6 @@
-const shell = require("shelljs");
-const path = require("path")
+import shell from 'shelljs';
+import path from 'node:path';
 
 process.env.PATH += ( path.delimiter + path.join( process.cwd(), 'node_modules', '.bin') );
 
-module.exports = {
-	shell
-}
+export { shell };

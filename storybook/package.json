@@ -8,6 +8,7 @@
 		"type": "git",
 		"url": "git@github.com:woocommerce/grow.git"
 	},
+	"type": "module",
 	"bin": {
 		"storybook": "bin/storybook.js"
 	},
