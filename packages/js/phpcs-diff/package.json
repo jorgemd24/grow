@@ -1,0 +1,19 @@
+{
+	"name": "woocommerce-grow-phpcs-diff",
+	"title": "WooCommerce Grow - PHCS Diff Package",
+	"type": "module",
+	"license": "GPL-3.0-or-later",
+	"version": "0.0.1",
+	"description": "It adds phpcs diff capabilities to a project",
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:woocommerce/grow.git"
+	},
+	"bin": {
+		"phpcs-diff": "bin/diff.js"
+	},
+	"dependencies": {
+		"process": "^0.11.10",
+		"shelljs": "^0.8.5"
+	}
+}
