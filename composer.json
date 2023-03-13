@@ -38,5 +38,10 @@
 	"scripts-descriptions": {
 		"assumeReleaseUnchanged": "Tell Git to assume that the 'release.txt' file is unchanged. This allows changes in this file to be ignored by Git.",
 		"noAssumeReleaseUnchanged": "Tell Git to stop assuming that the 'release.txt' file is unchanged, and track it normally."
+	},
+	"config": {
+		"preferred-install": {
+			"woocommerce/woorelease": "source"
+		}
 	}
 }
