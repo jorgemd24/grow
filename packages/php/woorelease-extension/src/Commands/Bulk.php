@@ -49,6 +49,20 @@ class Bulk extends Command {
 	 * @see InputInterface::validate()
 	 */
 	protected function initialize( InputInterface $input, OutputInterface $output ) {
+		// Throw an exception if the release-command argument isn't provided.
+		$requiredArguments = array_filter(
+			$this->getDefinition()->getArguments(),
+			function( InputArgument $argument ) {
+				return $argument->isRequired();
+			}
+		);
+
+		foreach ( $requiredArguments as $requiredArgument ) {
+			if ( null === $input->getArgument( $requiredArgument->getName() ) ) {
+				throw new RuntimeException( sprintf( 'Missing argument "%s"', $requiredArgument->getName() ) );
+			}
+		}
+
 		// This throws an exception if the command is not found, which we want to allow.
 		$command = $this->getApplication()->get( $input->getArgument( 'release-command' ) );
 		if ( ! $command instanceof Release ) {
