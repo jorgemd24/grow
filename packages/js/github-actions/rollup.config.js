@@ -64,7 +64,7 @@ export default [
 			inlineDynamicImports: true,
 		},
 		plugins: [
-			nodeResolve( { preferBuiltins: true } ),
+			nodeResolve( { exportConditions: ['node'] } ),
 			commonjs(),
 			json( { compact: true } ),
 		],

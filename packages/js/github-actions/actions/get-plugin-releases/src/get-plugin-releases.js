@@ -1,6 +1,7 @@
 /**
  * External dependencies
  */
+import 'react-native-get-random-values';
 import fetch from 'node-fetch';
 import core from '@actions/core';
 
