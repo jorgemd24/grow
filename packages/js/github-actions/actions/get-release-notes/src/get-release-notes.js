@@ -1,6 +1,7 @@
 /**
  * External dependencies
  */
+import 'react-native-get-random-values';
 import github from '@actions/github';
 import core from '@actions/core';
 import semver from 'semver';
